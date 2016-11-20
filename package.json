@@ -1,0 +1,27 @@
+{
+  "name": "grab-markup",
+  "version": "1.0.1",
+  "description": "grabs html from web pages and saves to .txt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tehOPEologist/grab-markup.git"
+  },
+  "author": "Aaron Giordano-Barry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tehOPEologist/grab-markup/issues"
+  },
+  "homepage": "https://github.com/tehOPEologist/grab-markup#readme",
+  "dependencies": {
+    "bhttp": "^1.2.4",
+    "bluebird": "^3.4.6",
+    "chalk": "^1.1.3",
+    "cheerio": "^0.22.0",
+    "html-minifier": "^3.2.2",
+    "mkdirp": "^0.5.1"
+  }
+}
