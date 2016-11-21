@@ -9,9 +9,14 @@ var minify = require('html-minifier').minify;
 var chalk = require('chalk');
 
 var config = JSON.parse(fs.readFileSync('package.json', 'utf-8'));
+var session = bhttp;
+
+if (config.liveData["user-agent"]) {
+  session = bhttp.session({ headers: {"user-agent": config.liveData["user-agent"]} });
+}
 
 Promise.each(config.liveData.pages, function (url) {
-  return bhttp.get('http://' + url).then(function (response) {
+  return session.get('http://' + url).then(function (response) {
     var response = response.body.toString();
     $ = cheerio.load(response);
 

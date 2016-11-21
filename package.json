@@ -1,6 +1,6 @@
 {
   "name": "grab-markup",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "grabs html from web pages and saves to .txt",
   "main": "index.js",
   "scripts": {
